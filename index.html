@@ -123,7 +123,7 @@
             position: fixed;
             inset: 0;
             pointer-events: none;
-            z-index: 1;
+            z-index: 10000;
             overflow: hidden;
         }
 
@@ -1525,10 +1525,10 @@
     <script>
         // ===== ENTRY GATE =====
         const entryGate = document.getElementById('entryGate');
+        generatePetals();
         entryGate.addEventListener('click', () => {
             entryGate.classList.add('hidden');
             document.getElementById('audioToggle').style.display = 'flex';
-            generatePetals();
         });
 
         // ===== FLOATING PETALS =====
