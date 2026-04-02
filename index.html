@@ -1385,12 +1385,22 @@
 
     <!-- JAVASCRIPT -->
     <script>
+        // ===== AUDIO SETUP =====
+        const bgMusic = new Audio('galiyaan.mp3');
+        bgMusic.loop = true;
+        bgMusic.volume = 0.4;
+        let audioPlaying = false;
+
         // ===== ENTRY GATE =====
         const entryGate = document.getElementById('entryGate');
         generatePetals();
         entryGate.addEventListener('click', () => {
             entryGate.classList.add('hidden');
             document.getElementById('audioToggle').style.display = 'flex';
+            bgMusic.play();
+            audioPlaying = true;
+            document.getElementById('audioOn').style.display = 'block';
+            document.getElementById('audioOff').style.display = 'none';
         });
 
         // ===== FLOATING PETALS =====
@@ -1490,15 +1500,12 @@
 
         // ===== AUDIO TOGGLE =====
         const audioToggle = document.getElementById('audioToggle');
-        let audioPlaying = false;
-        // Add your audio file: const bgMusic = new Audio('your-music.mp3');
-        // bgMusic.loop = true;
 
         audioToggle.addEventListener('click', () => {
             audioPlaying = !audioPlaying;
             document.getElementById('audioOn').style.display = audioPlaying ? 'block' : 'none';
             document.getElementById('audioOff').style.display = audioPlaying ? 'none' : 'block';
-            // if (audioPlaying) bgMusic.play(); else bgMusic.pause();
+            if (audioPlaying) bgMusic.play(); else bgMusic.pause();
         });
     </script>
 </body>
