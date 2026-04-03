@@ -618,6 +618,30 @@
             font-style: italic;
         }
 
+        .event-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .event-venue {
+            font-family: var(--font-sans);
+            font-size: 0.7rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-top: 0.4rem;
+            background: var(--cream-2);
+            display: inline-block;
+            padding: 2px 12px;
+            border-radius: 20px;
+        }
+
+        .event-hindi {
+            font-size: 1rem;
+            color: var(--text-mid);
+            margin-bottom: 0.2rem;
+        }
+
         .event-divider {
             display: flex;
             align-items: center;
@@ -1213,7 +1237,7 @@
         <div class="hero-card reveal">
             <div class="corner-bl"></div>
             <div class="corner-br"></div>
-            <div class="ganesh-icon">&#x1F549;</div>
+            <div class="ganesh-icon">&#x5350;</div>
             <p class="sanskrit">
                 वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br>
                 निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
@@ -1309,35 +1333,107 @@
         <p class="section-subtitle reveal reveal-delay-1">Join us as we celebrate our union</p>
         <div class="events-list">
 
+            <!-- 1. Tilak - Teela -->
             <div class="event-block reveal reveal-delay-1" data-event>
-                <div class="event-title">Carnival Party</div>
-                <div class="event-subtitle">Fun & Festivities</div>
-                <div class="event-time">19th April 2026 &bull; 3:00 PM</div>
-                <div class="event-video-wrapper">
-                    <img src="carnival.jpeg" alt="Carnival Party" style="width:100%; height:auto; max-height:400px; object-fit:contain; border-radius:8px;">
-                </div>
+                <div class="event-icon">&#x1F538;</div>
+                <div class="event-hindi">|| तिलक - टीला ||</div>
+                <div class="event-title">Tilak - Teela</div>
+                <div class="event-subtitle">Sacred Tilak Ceremony</div>
+                <div class="event-time">Sunday, 19th April 2026 &bull; 9:00 AM</div>
+                <div class="event-venue">Niwas Sthan</div>
             </div>
 
             <div class="event-divider"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
 
+            <!-- 2. Vana -->
             <div class="event-block reveal reveal-delay-2" data-event>
-                <div class="event-title">DJ Night</div>
-                <div class="event-subtitle">Dance The Night Away</div>
-                <div class="event-time">19th April 2026 &bull; 9:00 PM</div>
+                <div class="event-icon">&#x1F33F;</div>
+                <div class="event-hindi">|| वाना ||</div>
+                <div class="event-title">Vana</div>
+                <div class="event-subtitle">Traditional Vana Ritual</div>
+                <div class="event-time">Sunday, 19th April 2026 &bull; 1:30 PM - 3:00 PM</div>
+                <div class="event-venue">Niwas Sthan</div>
+            </div>
+
+            <div class="event-divider"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
+
+            <!-- 3. Haldi - Carnival -->
+            <div class="event-block reveal reveal-delay-1" data-event>
+                <div class="event-icon">&#x1F31F;</div>
+                <div class="event-hindi">|| हल्दी - कार्निवल ||</div>
+                <div class="event-title">Haldi - Carnival</div>
+                <div class="event-subtitle">Fun, Festivities & Haldi Celebration</div>
+                <div class="event-time">Sunday, 19th April 2026 &bull; 4:00 PM</div>
+                <div class="event-venue">Diksha Ground</div>
                 <div class="event-video-wrapper">
-                    <img src="djnight.jpeg" alt="DJ Night" style="width:100%; height:auto; max-height:400px; object-fit:contain; border-radius:8px;">
+                    <img src="carnival.jpeg" alt="Haldi Carnival" style="width:100%; height:auto; max-height:400px; object-fit:contain; border-radius:8px;">
                 </div>
             </div>
 
             <div class="event-divider"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
 
-            <div class="event-block reveal reveal-delay-1" data-event>
-                <div class="event-title">Reception</div>
-                <div class="event-subtitle">An Evening of Celebration</div>
-                <div class="event-time">20th April 2026</div>
+            <!-- 4. Supari Manuhar - Mahila Sangeet - DJ -->
+            <div class="event-block reveal reveal-delay-2" data-event>
+                <div class="event-icon">&#x1F3B6;</div>
+                <div class="event-hindi">|| सुपारी मनुहार - महिला संगीत - डी.जे. ||</div>
+                <div class="event-title">Sangeet & DJ Night</div>
+                <div class="event-subtitle">Supari Manuhar, Mahila Sangeet & DJ</div>
+                <div class="event-time">Sunday, 19th April 2026 &bull; 8:00 PM</div>
+                <div class="event-venue">Diksha Ground</div>
                 <div class="event-video-wrapper">
-                    <img src="reception.jpeg" alt="Reception" style="width:100%; height:auto; max-height:400px; object-fit:contain; border-radius:8px;">
+                    <img src="djnight.jpeg" alt="Sangeet DJ Night" style="width:100%; height:auto; max-height:400px; object-fit:contain; border-radius:8px;">
                 </div>
+            </div>
+
+            <div class="event-divider"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
+
+            <!-- 5. Mayra -->
+            <div class="event-block reveal reveal-delay-1" data-event>
+                <div class="event-icon">&#x1F381;</div>
+                <div class="event-hindi">|| मायरा ||</div>
+                <div class="event-title">Mayra</div>
+                <div class="event-subtitle">Heartfelt Mayra Ceremony</div>
+                <div class="event-time">Monday, 20th April 2026 &bull; 10:00 AM</div>
+                <div class="event-venue">Niwas Sthan</div>
+                <div class="event-video-wrapper">
+                    <img src="mayara.jpeg" alt="Mayra Ceremony" style="width:100%; height:auto; max-height:400px; object-fit:contain; border-radius:8px;">
+                </div>
+            </div>
+
+            <div class="event-divider"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
+
+            <!-- 6. Bandoli -->
+            <div class="event-block reveal reveal-delay-2" data-event>
+                <div class="event-icon">&#x1F3C7;</div>
+                <div class="event-hindi">|| बन्दौली ||</div>
+                <div class="event-title">Bandoli</div>
+                <div class="event-subtitle">The Grand Baraat Procession</div>
+                <div class="event-time">Monday, 20th April 2026 &bull; 5:00 PM</div>
+                <div class="event-venue">Niwas Sthan</div>
+            </div>
+
+            <div class="event-divider"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
+
+            <!-- 7. Kenku -->
+            <div class="event-block reveal reveal-delay-1" data-event>
+                <div class="event-icon">&#x1F490;</div>
+                <div class="event-hindi">|| केंकू ||</div>
+                <div class="event-title">Kenku</div>
+                <div class="event-subtitle">Auspicious Kenku Ceremony</div>
+                <div class="event-time">Tuesday, 21st April 2026 &bull; 9:00 AM - 10:30 AM</div>
+                <div class="event-venue">Niwas Sthan</div>
+            </div>
+
+            <div class="event-divider"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
+
+            <!-- 8. Panigrahan Sanskar (Wedding) -->
+            <div class="event-block reveal reveal-delay-2" data-event>
+                <div class="event-icon">&#x1F4AB;</div>
+                <div class="event-hindi">|| पाणिग्रहण संस्कार ||</div>
+                <div class="event-title">Panigrahan Sanskar</div>
+                <div class="event-subtitle">The Sacred Wedding Ceremony</div>
+                <div class="event-time">Tuesday, 21st April 2026 &bull; Shubh Lagna 1:18 PM - 1:39 PM</div>
+                <div class="event-venue">Diksha Ground</div>
             </div>
 
         </div>
@@ -1368,7 +1464,7 @@
             <p>Special love from the little ones of the family</p>
         </div>
         <div class="footer-bottom reveal reveal-delay-4">
-            <a href="#">@yourinstahandle</a>
+            <a href="https://instagram.com/a_s_forever_11.11" target="_blank">@a_s_forever_11.11</a>
             <p class="footer-made">Made with love</p>
         </div>
     </footer>
